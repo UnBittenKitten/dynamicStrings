@@ -57,3 +57,13 @@ void dyn_str_print(dynStr* dyn_str, int printNewLine) {
         printf("\n");
     }
 }
+
+int main() {
+    dynStr* test = dyn_str_init();
+    dyn_str_add(test, "this is a string");
+    dyn_str_add(test, " this is another string");
+    dyn_str_print(test, 1);
+
+    dyn_str_free(test);
+    return 0;
+}
