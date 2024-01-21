@@ -71,7 +71,6 @@ int main(int argc, char* argv[]) {
     test.add(" foobar foobar foobar");
     test.add(" foobar foobar foobar");
     test.add(" foobar foobar foobar");
-    //a
     
     test.print(1);
     cout << "lfe = " << test.get_lfe() << endl; 
