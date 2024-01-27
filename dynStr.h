@@ -144,13 +144,3 @@ void dyn_str_copy(dynStr* dest, char source[], int resize) {
     *(dest->lfe) = strlen(source);
 
 }
-
-int main() {
-    dynStr* ptr = dyn_str_init();
-    dyn_str_add(ptr, "apoco si");
-    dyn_str_print(ptr, 1);
-
-
-
-    dyn_str_free(ptr);
-}
